@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JW 雙語學習播放器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>JW 雙語學習播放器</h1>
+        <p>目前狀態：原生播放模式 (英文發音 + 中文字幕)</p>
+    </header>
+
+    <main>
+        <div class="input-card">
+            <div class="input-group">
+                <input id="videoUrl" type="url" placeholder="請貼上 JW 影片分享網址" value="">
+                <button id="loadBtn">載入影片</button>
+            </div>
+        </div>
+
+        <section class="video-section">
+            <div class="video-container">
+                <video id="mainPlayer" controls crossorigin="anonymous">
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
